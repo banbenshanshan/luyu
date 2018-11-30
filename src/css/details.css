@@ -1,0 +1,252 @@
+#menu {
+	width: 40px;
+	/*height: 120px;*/
+	position: fixed;
+	right: 5px;
+	top: 50%;
+	transform: translateY(-50%);
+	display: none;
+}
+#menu .active {
+	background: green;
+}
+#menu li {
+	width: 40px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	/*float: right;*/
+	background: #444;
+	border-bottom: 1px solid #8E8E8E;
+	cursor: pointer;color: white;
+	font-size: 12px;
+}
+#menu .a:hover{
+	background: green;
+}
+#main{
+	height: 800px;margin-top: 20px;
+}
+#main .mainl{
+	height: 530px;width: 550px;
+	float: left;
+}
+#main .mainl .imgdet .imgpart {
+  position: relative;
+}
+#main .mainl .imgdet .imgpart .pic {
+  position: relative;
+  overflow: hidden;
+  width: 500px;
+  height: 450px;
+  border: 1px solid #e6e6e6;
+}
+#main .mainl .imgdet .imgpart .pic img {
+  width: 498px;
+  height: 448px;
+}
+/*#main .mainl .imgdet .imgpart .pic :hover{
+	border: 1px solid #e6e6e6;
+}*/
+#main .mainl .imgdet .imgpart .pic .magnify {
+  width: 183px;
+  height: 183px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: move;
+  display: none;
+  background-color: #fff;
+  opacity: .5;
+  filter: alpha(opacity=30);
+}
+#main .mainl .imgdet .imgpart .bigpic {
+  height: 350px;
+  width: 350px;
+  display: none;
+  border: 1px solid #e6e6e6;
+  position: absolute;
+  top: 0;
+  right: -360px;
+  z-index: 333;
+  overflow: hidden;
+}
+#main .mainl .imgdet .imgpart .bigpic img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 700px;
+  height: 700px;
+}
+#main .mainl .imgdet .imglist {
+  width: 500px;
+  height: 100px;
+  position: relative;
+  float: left;
+  overflow: hidden;
+}
+#main .mainl .imgdet .imglist i {
+  font-size: 24px;
+  color: #999;
+  position: absolute;
+  top: 50%;
+  margin-top: -12px;
+}
+#main .mainl .imgdet .imglist ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 22px;
+  height: 90px;
+}
+#main .mainl .imgdet .imglist ul .active {
+  border: 1px solid #E5004A;
+}
+#main .mainl .imgdet .imglist ul li {
+  *display: inline;
+  *zoom: 1;
+  float: left;
+  width: 85px;
+  height: 85px;
+  text-align: center;
+  border: 1px solid #e6e6e6;
+  margin-right: 5px;
+}
+#main .mainl .imgdet .imglist ul li img {
+  width: 100%;
+  height: 100%;
+}
+#main .mainl .imgdet .imglist ul li:hover {
+  border: 1px solid #E5004A;
+}
+/*#main .mainl .share_box {
+  height: 30px;
+  margin-left: 20px;
+}
+#main .mainl .share_box .sh_img span {
+  margin-right: 5px;
+}
+#main .mainl .share_box .sh_img a {
+  float: left;
+  display: block;
+  font-size: 12px;
+  padding-left: 17px;
+  height: 16px;
+  width: 16px;
+  cursor: pointer;
+  margin: 6px 6px 6px 0;
+  background: url(../img/gwc.png));
+}
+#main .mainl .share_box .sh_img a:hover {
+  opacity: 0.5;
+}*/
+#main .mainr{
+	height: 800px;width:640px ;float: left;
+}
+#main .mainr #mainmain{
+	margin: 20px 0;
+}
+#main .mainr #mainmain .content{
+	font-size: 28px;
+}
+#main .mainr #mainmain  .price{
+	font-size: 33px;color: red;margin-top: 60px;margin-left: 10px;
+}
+#main .mainr #mainmain .colorp .price span{
+	font-size: 14px;color: #444;margin-left: 30px;font-weight: 500;
+}
+#main .mainr #mainmain .colorp span{
+	margin: 0 20px;color: #444;font-size: 14px;
+}
+#main .mainr .zenping{
+	position: relative;margin: 30px 0 0px 0;
+	color: #74777B;font-size: 12px;height: 110px;
+}
+#main .mainr .zenping ul{
+	position: absolute;top: 0;left: 60px;
+}
+#main .mainr .zenping ul li{
+	margin-bottom: 10px;
+}
+#main .mainr .peisong{
+	font-size: 14px;color: #74777B;margin-bottom: 40px;
+}
+#main .mainr .peisong span{
+	color: blue;margin-left: 5px;
+}
+#main .mainr .put span{
+	width: 30px;height: 30px;display: inline-block;background: #ccc;
+	line-height: 30px;text-align: center;margin: 0 5px;cursor: pointer;
+}
+#main .mainr .put{
+	margin: 40px 0;
+}
+#main .mainr .put input{
+	width: 50px;height: 30px;border: 1px solid#ccc;
+}
+#main .mainr .graycolor{
+	color: #74777B;font-size: 14px;
+}
+#main .mainr .graycolor p{
+	margin-bottom: 20px;
+}
+#main .mainr .graycolor .color{
+	color: #FF7500;border: 1px solid #FF7500 !important;
+}
+#main .mainr .graycolor .aa{
+	border: 1px solid#ccc;margin: 0 5px;padding: 5px;cursor: pointer;
+}
+#main .mainr .waitb{
+	width: 240px;height: 50px;
+	background:#ff7500;color: white;
+	text-align: center;
+	line-height: 50px;
+	margin-top:40px;cursor: pointer;margin-bottom: 10px;
+}
+#main .mainr .psword span{
+	margin-left: 20px;
+}
+#card{
+	height: 9500px;
+}
+#card .cardl{
+	width: 200px;height:2000px ;border: 1px solid #F1EFEE;float: left;
+}
+#card .cardl .cardl_h{
+	width:200px ;height: 60px;background: #F9F9F9;border-bottom: 1px solid #F1EFEE;
+	line-height: 60px;text-align: center;font-size: 18px;font-weight: bolder;color: #444;
+}
+#card .cardl ul li{
+	margin: 20px;cursor: pointer;
+}
+#card .cardl ul li img{
+	width: 160px;height: 160px;margin: 10px;
+}
+#card .cardl h3{
+	color: red;font-size: 18px;
+}
+#card .cardl p{
+	font-size: 12px;color: #74777B;
+}
+#card .cardr{
+	width: 980px;float: left;margin-left: 15px;
+	height: 9500px;
+}
+#card .cardr ul{
+	height: 60px;border-bottom: 1px solid #F1EFEE;border-top: 1px solid #F1EFEE;
+	line-height: 60px;color: #2F3238;
+}
+#card .cardr ul li{
+	float: left;font-size: 20px;margin-left:20px ;cursor: pointer;
+}
+#card .cardr ul li:hover{
+	color: #00BB00;
+}
+#card .cardr ul li span{
+	margin-left: 20px;color: #2F3238 !important;
+}
+#card .cardr .card_head{
+    height: 60px;line-height: 60px;font-size: 20px;color: #2F3238;
+    border-bottom: 1px solid #F1EFEE;
+}

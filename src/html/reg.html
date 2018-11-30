@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>注册页面</title>
+		<link rel="stylesheet" type="text/css" href="../css/reg.css" />
+		<link rel="stylesheet" type="text/css" href="../css/htmleaf-demo.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/verify.css"/>
+	</head>
+
+	<body>
+		<div id="zon">
+			<div id="head">
+				<div class="content">
+					<div class="head1">
+						<a href="../index.html"><img src="../img/reg.png" /></a><span>注册账号</span>
+					</div>
+					<div class="head2">
+						<span>登陆</span>
+					</div>
+				</div>
+			</div>
+			<div id="main">
+				<div id="box">
+					<div class="boxt">
+						注册360账号
+					</div>
+					<div class="boxb">
+						<!--<div class="boxb1">-->
+						<div class="aaa">
+							<img src="../img/icon_2gam5lfo94p/shouji.png" />
+							<input type="text" name="input1" id="input1" value="" placeholder="请输入要注册的手机号" />
+							<span id="span1"></span>
+						</div>
+						<div class="aaa">
+							<img src="../img/icon_2gam5lfo94p/suoding.png" />
+							<input type="password" name="input2" id="input2" value="" placeholder="密码请设置6-16个字符" />
+							<span id="span2"></span>
+						</div>
+						<div class="row">
+								<div class="col-md-offset-4 col-md-4">
+									<div id="mpanel2" ></div>
+									<span id="spans"></span><br>
+									<button type="button" id="check-btn" class="verify-btn">确定</button>
+								</div>
+						</div>
+						<div id="btn">
+							同意注册
+						</div>
+						<input type="checkbox" name="check" id="check" value="" />
+						<span style="font-size: 12px;color: #8E8E8E;">阅读并同意“360用户协议”和“360用户隐私政策”</span>
+						<!--</div>-->
+					</div>
+				</div>
+			</div>
+			<div id="foot">
+				<p class="help"><span>帮助中心</span><span style="border-left: 1px solid #ccc; padding:0 20px ; margin: 0 20px;">立即投诉</span></p>
+				<p>Copyright©2005-2018 360.CN All Rights Reserved 360安全中心</p>
+				<p>京ICP证080047号[京ICP备08010314号-6]</p>
+				<p>京公网安备 11000002000006号</p>
+			</div>
+		</div>
+	</body>
+
+</html>
+<script src="../js/jquery-1.10.1.min.js"></script>
+<script src="../js/chajian/verify.js"></script>
+<script src="../js/reg.js"></script>
+<script type="text/javascript">
+	//验证码
+	$isok3 = false;
+	$('#mpanel2').codeVerify({
+			type : 1,
+			width : '400px',
+			height : '40px',
+			fontSize : '30px',
+			codeLength : 6,
+			btnId : 'check-btn',
+			ready : function() {
+			},
+			success : function() {
+				spans.innerHTML="验证成功！";
+				spans.style.color='green';
+				$isok3 = true;
+				console.log($isok3);
+			},
+			error : function() {
+				spans.innerHTML="验证失败！";
+				spans.style.color="red";
+	            $isok3 = false;
+				console.log($isok3);
+				
+			}
+		});
+		
+	//输入框验证
+	
+</script>

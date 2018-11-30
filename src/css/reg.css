@@ -1,0 +1,90 @@
+*{
+	margin: 0;padding: 0;
+}
+body{
+	width: 100%;
+	height: 100%;background: #f5f5f5;
+}
+#zon{
+	width: 100%;
+	height: 100%;
+}
+#head {
+	height: 70px;background: #E8e8e8;
+}
+#head .content{
+	height: 70px;width:700px;margin: 0px auto;
+}
+#head .content span:hover{
+	cursor: pointer;color: green;
+}
+#head .content .head1{
+	float: left;height: 70px;
+}
+#head .content .head2{
+	float: right;height: 70px;
+	font-size: 14px;line-height: 70px;
+}
+#head .content .head1 span{
+	float: left;height: 30px;line-height: 30px; font-size: 20px;
+	border-left: 1px solid #444; padding:0 30px ; margin: 20px 30px; 
+}
+#head .content .head1  img{
+	float: left;margin-top: 10px;
+}
+#main #box{
+	height: 520px;width: 700px;
+	background: white;margin: 50px auto;margin-top: 80px;
+}
+#main #box .boxt{
+	font-size: 20px;width: 700px;height: 68px;border-bottom: 2px solid #F5F5F5;
+	line-height: 68px;text-align: center;
+}
+#main #box .boxb{
+	text-align: center;width: 700px;height: 630px;padding-top: 30px;
+}
+#main #box .boxb img{
+	width: 30px;height: 30px;
+	position: absolute;left: 0;top: 5px;
+}
+#main #box .boxb .aaa{
+	width: 400px;height: 40px;border: 1px solid #E8E8E8;border-radius: 5px;
+	margin: 30px auto;
+	position: relative;
+}
+#main #box .boxb .aaa input{
+	width: 358px;height: 38px;border: none;
+	position: absolute;left: 40px;top: 0;
+}
+#main #box .boxb .aaa span{
+	height: 30px;font-size: 14px;display: block;
+	width: 300px;margin-top: 45px;
+}
+#main #box  #btn{
+	width: 400px;height: 40px;color: white;background: #00bb00;line-height: 40px;margin: 0 auto ;cursor: pointer;
+}
+.code{   
+    background-image:url(code.jpg);   
+    font-family:Arial;   
+    font-style:italic;   
+    color:Red;   
+    border:0;   
+    padding:2px 3px;   
+    letter-spacing:3px;   
+    font-weight:bolder;   
+    }   
+.unchanged{   
+    border:0;   
+}   
+#foot{
+	height: 150px;
+	text-align: center;
+	color: #8E8E8E;font-size: 14px;
+}
+#foot .help{
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+#foot .help span:hover{
+	color: green;
+}
